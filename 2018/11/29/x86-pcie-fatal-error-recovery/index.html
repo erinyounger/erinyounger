@@ -19,12 +19,12 @@
 <meta property="og:site_name" content="Younger">
 <meta property="og:description" content="前言在X86领域，PCIE 链路的应用非常广泛，从普通管理GE网络通道到超大带宽GPU数据交换，几乎覆盖所有有数据传输的地方，可以承载ETH、FC、IB等各种或衍生的增强通信协议，因此PCIE的可靠性尤其重要，PCIE 一般不出问题，只要出问题就是大问题。此文主要介绍当PCIE出现致命错误(Fatal error)时不宕机的处理办法。   1. X86体系PCIE错误处理方法PCIE 协议错误总体">
 <meta property="og:locale" content="English,Chinese">
-<meta property="og:image" content="https://erinyounger.github.io/2018/11/29/images/pcie_error_classification.jpg">
-<meta property="og:updated_time" content="2018-11-30T16:55:35.511Z">
+<meta property="og:image" content="https://erinyounger.github.io/images/pcie_error_classification.jpg">
+<meta property="og:updated_time" content="2018-11-30T16:58:02.156Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="x86体系下PCIE致命错误终极修复方法">
 <meta name="twitter:description" content="前言在X86领域，PCIE 链路的应用非常广泛，从普通管理GE网络通道到超大带宽GPU数据交换，几乎覆盖所有有数据传输的地方，可以承载ETH、FC、IB等各种或衍生的增强通信协议，因此PCIE的可靠性尤其重要，PCIE 一般不出问题，只要出问题就是大问题。此文主要介绍当PCIE出现致命错误(Fatal error)时不宕机的处理办法。   1. X86体系PCIE错误处理方法PCIE 协议错误总体">
-<meta name="twitter:image" content="https://erinyounger.github.io/2018/11/29/images/pcie_error_classification.jpg">
+<meta name="twitter:image" content="https://erinyounger.github.io/images/pcie_error_classification.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Younger" type="application/atom+xml">
   
@@ -142,7 +142,7 @@
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在X86领域，<a href="https://en.wikipedia.org/wiki/PCI_Express" target="_blank" rel="noopener">PCIE</a> 链路的应用非常广泛，从普通管理GE网络通道到超大带宽GPU数据交换，几乎覆盖所有有数据传输的地方，可以承载ETH、FC、IB等各种或衍生的增强通信协议，因此PCIE的可靠性尤其重要，PCIE 一般不出问题，只要出问题就是大问题。<br>此文主要介绍当PCIE出现致命错误(Fatal error)时不宕机的处理办法。 </p>
 <hr>
-<h2 id="1-X86体系PCIE错误处理方法"><a href="#1-X86体系PCIE错误处理方法" class="headerlink" title="1. X86体系PCIE错误处理方法"></a>1. X86体系PCIE错误处理方法</h2><p>PCIE 协议错误总体上分为可修正错误(Correctable Error)和不可修正错误(UnCorrectable Error)两大类，其中，不可修正错误又分为致命错误(Fatal Error)和非致命错误(NoFatal Error)，协议中定义如下：<br><img src="../images/pcie_error_classification.jpg" alt=" " title="PCIE错误分类"></p>
+<h2 id="1-X86体系PCIE错误处理方法"><a href="#1-X86体系PCIE错误处理方法" class="headerlink" title="1. X86体系PCIE错误处理方法"></a>1. X86体系PCIE错误处理方法</h2><p>PCIE 协议错误总体上分为可修正错误(Correctable Error)和不可修正错误(UnCorrectable Error)两大类，其中，不可修正错误又分为致命错误(Fatal Error)和非致命错误(NoFatal Error)，协议中定义如下：<br><img src="/images/pcie_error_classification.jpg" alt=" " title="PCIE错误分类"></p>
 <ul>
 <li><h3 id="错误上报机制"><a href="#错误上报机制" class="headerlink" title="错误上报机制"></a>错误上报机制</h3><ol>
 <li>SMI - Firmware-First</li>
