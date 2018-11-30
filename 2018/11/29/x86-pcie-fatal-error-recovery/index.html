@@ -15,7 +15,7 @@
 <meta name="keywords" content="PCIE,x86">
 <meta property="og:type" content="article">
 <meta property="og:title" content="x86体系下PCIE致命错误终极修复方法">
-<meta property="og:url" content="https://erinyounger.github.io/2018/11/29/x86-pcie-fatal-error-recovery/index.html">
+<meta property="og:url" content="https://erinyounger.github.io/erionyounger/2018/11/29/x86-pcie-fatal-error-recovery/index.html">
 <meta property="og:site_name" content="Younger">
 <meta property="og:description" content="前言在X86领域，PCIE 链路的应用非常广泛，从普通管理GE网络通道到超大带宽GPU数据交换，几乎覆盖所有有数据传输的地方，可以承载ETH、FC、IB等各种或衍生的增强通信协议，因此PCIE的可靠性尤其重要，PCIE 一般不出问题，只要出问题就是大问题。此文主要介绍当PCIE出现致命错误(Fatal error)时不宕机的处理办法。   1. X86体系PCIE错误处理方法PCIE 协议错误总体">
 <meta property="og:locale" content="English,Chinese">
@@ -28,7 +28,7 @@
   
     <link rel="alternate" href="/atom.xml" title="Younger" type="application/atom+xml">
   
-  <link rel="icon" href="/erinyounger/css/images/favicon.ico">
+  <link rel="icon" href="/css/images/favicon.ico">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
@@ -44,14 +44,14 @@
   <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
 
   <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
-  <link rel="stylesheet" href="/erinyounger/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
-  <script src="/erinyounger/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/jquery-3.1.1.min.js"></script>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/erinyounger/css/bootstrap.css">
-  <link rel="stylesheet" href="/erinyounger/css/fashion.css">
-  <link rel="stylesheet" href="/erinyounger/css/glyphs.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/fashion.css">
+  <link rel="stylesheet" href="/css/glyphs.css">
 
 </head>
 </html>
@@ -69,7 +69,7 @@
 
           <h1 class="site-title">
             
-              <a href="/erinyounger/" title="Younger" rel="home"> Younger </a>
+              <a href="/" title="Younger" rel="home"> Younger </a>
             
           </h1>
           
@@ -84,15 +84,15 @@
             <div class="clearfix sf-menu">
               <ul id="main-nav" class="menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/erinyounger/">Home</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/erinyounger/archives">Archives</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/erinyounger/categories">Categories</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/erinyounger/tags">Tags</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/erinyounger/about">About</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
                     
               </ul>
             </div>
@@ -124,13 +124,13 @@
     
     <div class="article-meta">
       
-	<a href="/erinyounger/2018/11/29/x86-pcie-fatal-error-recovery/" class="article-date">
+	<a href="/2018/11/29/x86-pcie-fatal-error-recovery/" class="article-date">
 	  <time datetime="2018-11-29T15:31:12.000Z" itemprop="datePublished">November 29, 2018</time>
 	</a>
 
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/erinyounger/categories/硬件/">硬件</a>
+    <a class="article-category-link" href="/categories/硬件/">硬件</a>
  
       
 	<span id="busuanzi_container_page_pv">
@@ -157,11 +157,11 @@
     <footer class="entry-meta entry-footer">
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/erinyounger/categories/硬件/">硬件</a>
+    <a class="article-category-link" href="/categories/硬件/">硬件</a>
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/erinyounger/tags/PCIE-x86/">PCIE,x86</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PCIE-x86/">PCIE,x86</a></li></ul>
 
       
         
@@ -197,7 +197,7 @@
 <nav id="article-nav">
   
   
-    <a href="/erinyounger/2018/11/29/requirment-or-purpose/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/11/29/requirment-or-purpose/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">需求：Terrorist Recognition</div>
     </a>
@@ -224,15 +224,15 @@
     </div>
     <!-- <nav id="mobile-nav">
   
-    <a href="/erinyounger/" class="mobile-nav-link">Home</a>
+    <a href="/" class="mobile-nav-link">Home</a>
   
-    <a href="/erinyounger/archives" class="mobile-nav-link">Archives</a>
+    <a href="/archives" class="mobile-nav-link">Archives</a>
   
-    <a href="/erinyounger/categories" class="mobile-nav-link">Categories</a>
+    <a href="/categories" class="mobile-nav-link">Categories</a>
   
-    <a href="/erinyounger/tags" class="mobile-nav-link">Tags</a>
+    <a href="/tags" class="mobile-nav-link">Tags</a>
   
-    <a href="/erinyounger/about" class="mobile-nav-link">About</a>
+    <a href="/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">
@@ -306,13 +306,13 @@
 </script>
 
 
-  <link rel="stylesheet" href="/erinyounger/fancybox/jquery.fancybox.css">
-  <script src="/erinyounger/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/erinyounger/js/script.js"></script>
-<script src="/erinyounger/js/bootstrap.js"></script>
-<script src="/erinyounger/js/main.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
 
 
 
