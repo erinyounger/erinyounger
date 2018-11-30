@@ -105,6 +105,67 @@
         
           <section id="main">
   
+    <article id="post-x86-pcie-fatal-error-recovery" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/erinyounger/2018/11/29/x86-pcie-fatal-error-recovery/">x86体系下PCIE致命错误终极修复方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/erinyounger/2018/11/29/x86-pcie-fatal-error-recovery/" class="article-date">
+	  <time datetime="2018-11-29T15:31:12.000Z" itemprop="datePublished">November 29, 2018</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/erinyounger/categories/硬件/">硬件</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在X86领域，<a href="https://en.wikipedia.org/wiki/PCI_Express" target="_blank" rel="noopener">PCIE</a> 链路的应用非常广泛，从普通管理GE网络通道到超大带宽GPU数据交换，几乎覆盖所有有数据传输的地方，可以承载ETH、FC、IB等各种或衍生的增强通信协议，因此PCIE的可靠性尤其重要，PCIE 一般不出问题，只要出问题就是大问题。<br>此文主要介绍当PCIE出现致命错误(Fatal error)时不宕机的处理办法。 </p>
+<hr>
+<h2 id="1-X86体系PCIE错误处理方法"><a href="#1-X86体系PCIE错误处理方法" class="headerlink" title="1. X86体系PCIE错误处理方法"></a>1. X86体系PCIE错误处理方法</h2><p>PCIE 协议错误总体上分为可修正错误(Correctable Error)和不可修正错误(UnCorrectable Error)两大类，其中，不可修正错误又分为致命错误(Fatal Error)和非致命错误(NoFatal Error)，协议中定义如下：<br><img src="../images/pcie_error_classification.jpg" alt=" " title="PCIE错误分类"></p>
+<ul>
+<li><h3 id="错误上报机制"><a href="#错误上报机制" class="headerlink" title="错误上报机制"></a>错误上报机制</h3><ol>
+<li>SMI - Firmware-First</li>
+<li>MSI - OS带内处理</li>
+</ol>
+</li>
+<li><h3 id="错误修复机制"><a href="#错误修复机制" class="headerlink" title="错误修复机制"></a>错误修复机制</h3></li>
+</ul>
+<h2 id="2-PCIE致命错误-不宕机-恢复方法"><a href="#2-PCIE致命错误-不宕机-恢复方法" class="headerlink" title="2. PCIE致命错误==不宕机==恢复方法"></a>2. PCIE致命错误==不宕机==恢复方法</h2>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/erinyounger/categories/硬件/">硬件</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/erinyounger/tags/PCIE-x86/">PCIE,x86</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-requirment-or-purpose" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -113,7 +174,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/erinyounger/2018/11/28/requirment-or-purpose/">需求：Terrorist Recognition</a>
+      <a class="article-title" href="/erinyounger/2018/11/29/requirment-or-purpose/">需求：Terrorist Recognition</a>
     </h1>
   
 
@@ -121,8 +182,8 @@
     
     <div class="article-meta">
       
-	<a href="/erinyounger/2018/11/28/requirment-or-purpose/" class="article-date">
-	  <time datetime="2018-11-28T14:18:31.000Z" itemprop="datePublished">November 28, 2018</time>
+	<a href="/erinyounger/2018/11/29/requirment-or-purpose/" class="article-date">
+	  <time datetime="2018-11-29T15:07:57.972Z" itemprop="datePublished">November 29, 2018</time>
 	</a>
 
       
@@ -343,8 +404,20 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/erinyounger/2018/11/28/requirment-or-purpose/">需求：Terrorist Recognition</a></h6>
-              <span>November 28, 2018</span>
+              <h6 style="margin: 0;"><a href="/erinyounger/2018/11/29/x86-pcie-fatal-error-recovery/">x86体系下PCIE致命错误终极修复方法</a></h6>
+              <span>November 29, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/erinyounger/2018/11/29/requirment-or-purpose/">需求：Terrorist Recognition</a></h6>
+              <span>November 29, 2018</span>
             </div>
 
           </li>
@@ -370,7 +443,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/erinyounger/categories/web/">web</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/erinyounger/categories/生物识别/">生物识别</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/erinyounger/categories/web/">web</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/erinyounger/categories/生物识别/">生物识别</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/erinyounger/categories/硬件/">硬件</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -380,7 +453,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/erinyounger/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/erinyounger/tags/marddown/">marddown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/erinyounger/tags/人脸识别/">人脸识别</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/erinyounger/tags/PCIE-x86/">PCIE,x86</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/erinyounger/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/erinyounger/tags/marddown/">marddown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/erinyounger/tags/人脸识别/">人脸识别</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -390,7 +463,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/erinyounger/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/erinyounger/tags/marddown/" style="font-size: 10px;">marddown</a> <a href="/erinyounger/tags/人脸识别/" style="font-size: 10px;">人脸识别</a>
+      <a href="/erinyounger/tags/PCIE-x86/" style="font-size: 10px;">PCIE,x86</a> <a href="/erinyounger/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/erinyounger/tags/marddown/" style="font-size: 10px;">marddown</a> <a href="/erinyounger/tags/人脸识别/" style="font-size: 10px;">人脸识别</a>
     </div>
   </div>
 
@@ -400,7 +473,7 @@
     <h3 class="widget-title">Archives</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/erinyounger/archives/2018/11/">November 2018</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/erinyounger/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
